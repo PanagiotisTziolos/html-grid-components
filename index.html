@@ -7,61 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>HTML Grid Components</title>
 
-  <style>
-    /* Don't touch this START */
-
-    .container {
-      padding: 8px;
-      border: 2px dotted lightblue;
-    }
-
-    .logo {
-      min-width: 40px;
-      min-height: 40px;
-      border: 2px dotted turquoise;
-    }
-
-    .box {
-      min-width: 40px;
-      min-height: 40px;
-      padding: 4px;
-      border: 2px dotted lightcoral;
-    }
-
-    .inner-box {
-      min-width: 40px;
-      min-height: 40px;
-      padding: 4px;
-      border: 2px dotted lightgreen;
-    }
-
-    .inner-logo {
-      min-width: 36px;
-      min-height: 36px;
-      border: 2px dotted turquoise;
-    }
-
-    /* Don't touch this END */
-
-    /* Write CSS Here */
-    /* Practice re-using classes */
-
-    .two-column-grid__expand-two {}
-
-    .three-column-grid {}
-
-    .three-column-grid__expand-two {}
-
-    .five-column-grid {}
-
-    .center-grid {}
-
-    .grid-in-grid-1 {}
-
-    .grid-in-grid-2 {}
-
-    .grid-madness {}
-  </style>
+  <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
@@ -107,12 +53,12 @@
   <div>
     <h2>Grid within Grid #1</h2>
     <div class="container grid-in-grid-1">
-      <div class="box">
+      <div class="box three-column-grid__expand-two">
         <div class="inner-box"></div>
         <div class="inner-box"></div>
         <div class="inner-box"></div>
       </div>
-      <div class="box">
+      <div class="box five-column-grid">
         <div class="inner-box"></div>
         <div class="inner-box"></div>
         <div class="inner-box"></div>
@@ -130,7 +76,7 @@
       <div class="box expand">
         <div class="inner-box"></div>
       </div>
-      <div class="box">
+      <div class="box three-column-grid__expand-two">
         <div class="inner-box"></div>
         <div class="inner-box"></div>
         <div class="inner-box"></div>
@@ -140,57 +86,61 @@
   <div>
     <h2>Grid madness (extension)</h2>
     <div class="container grid-madness">
-      <div class="box">
+      <div class="box six-column-grid most-right show-last">
         <div class="inner-box"></div>
-        <div class="inner-box">
+        <div class="inner-box show-first">
           <div class="inner-logo"></div>
         </div>
-        <div class="inner-box"></div>
-      </div>
-      <div class="box">
         <div class="inner-box"></div>
       </div>
-      <div class="box">
-        <div class="inner-box"></div>
-        <div class="inner-box"></div>
-        <div class="inner-box"></div>
+
+      <div class="my-three-column-grid show-second">
+        <div class="box two-row-grid show-last">
+          <div class="inner-box"></div>
+        </div>
+        <div class="box three-row-grid show-first">
+          <div class="inner-box"></div>
+          <div class="inner-box"></div>
+          <div class="inner-box"></div>
+        </div>
+        <div class="box ten-row-grid show-second">
+          <div class="inner-box one-column-grid">
+            <div class="inner-logo"></div>
+          </div>
+          <div class="inner-box one-column-grid">
+            <div class="inner-logo"></div>
+          </div>
+          <div class="inner-box one-column-grid">
+            <div class="inner-logo"></div>
+          </div>
+          <div class="inner-box one-column-grid">
+            <div class="inner-logo"></div>
+          </div>
+          <div class="inner-box one-column-grid">
+            <div class="inner-logo"></div>
+          </div>
+          <div class="inner-box one-column-grid">
+            <div class="inner-logo"></div>
+          </div>
+          <div class="inner-box one-column-grid">
+            <div class="inner-logo"></div>
+          </div>
+          <div class="inner-box one-column-grid">
+            <div class="inner-logo"></div>
+          </div>
+          <div class="inner-box one-column-grid">
+            <div class="inner-logo"></div>
+          </div>
+          <div class="inner-box one-column-grid">
+            <div class="inner-logo"></div>
+          </div>
+        </div>
       </div>
-      <div class="box">
-        <div class="inner-box">
-          <div class="inner-logo"></div>
-        </div>
-        <div class="inner-box">
-          <div class="inner-logo"></div>
-        </div>
-        <div class="inner-box">
-          <div class="inner-logo"></div>
-        </div>
-        <div class="inner-box">
-          <div class="inner-logo"></div>
-        </div>
-        <div class="inner-box">
-          <div class="inner-logo"></div>
-        </div>
-        <div class="inner-box">
-          <div class="inner-logo"></div>
-        </div>
-        <div class="inner-box">
-          <div class="inner-logo"></div>
-        </div>
-        <div class="inner-box">
-          <div class="inner-logo"></div>
-        </div>
-        <div class="inner-box">
-          <div class="inner-logo"></div>
-        </div>
-        <div class="inner-box">
-          <div class="inner-logo"></div>
-        </div>
-      </div>
-      <div class="box">
+      
+      <div class="box six-column-grid show-first">
         <div class="inner-box"></div>
         <div class="inner-box"></div>
-        <div class="inner-box">
+        <div class="inner-box show-first">
           <div class="inner-logo"></div>
         </div>
         <div class="inner-box"></div>
